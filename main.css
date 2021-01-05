@@ -1,0 +1,8 @@
+.form,
+.info{
+    display: none;
+}
+
+.showing {
+    display: block;
+}
