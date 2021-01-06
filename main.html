@@ -6,22 +6,36 @@
     <title>toDoList</title>
 </head>
 <body>
-    <div class="time">
+    <!-- 상단 -->
+    <div class="top"> 
+        <!--상단 좌측 searchbox-->
+        <form class="textBoxSearch"> 
+        </form>
+    </div>
+    <!--중단-->
+    <div>
+    <!--시계-->
+    <div class="time"> 
         <h1>00:00</h1>
     </div>
-    <form class="form">
-        <input type="text" placeholder="What is your name?">
+    <!--이름 입력 박스-->
+    <form class="form"> 
+        <input class="textBoxInfo" type="text" placeholder="What is your name?">
     </form>
     <h4 class="info"></h4>
-    <form class="toDoForm">
-        <input type="text" placeholder="Write a to do">
+    <!--input box -->
+    <form class="inputToDo"> 
+        <input class=textBoxToDo type="text" placeholder="What is your main focus for today?">
     </form>
+     <!--toDoList -->
     <ul class="toDoList">
     </ul>
+    </div>
 
     <script src="clock.js"></script>
     <script src="information.js"></script>
     <script src="todo.js" ></script>
+    <script src="background.js"></script>
     
 </body>
 </html>

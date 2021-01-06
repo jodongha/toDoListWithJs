@@ -2,11 +2,12 @@ const form = document.querySelector(".form"),
     input = form.querySelector("input"),
     info = document.querySelector(".info");
     
-const USER_LS = "currentUser",
-    SHOWING_CN = "showing";
+const user = "currentUser",
+    showing = "showing";
 
+//localStorage에 데이터 저장
 function saveName(text){
-    localStorage.setItem(USER_LS, text);
+    localStorage.setItem(user, text);
 }
 
 function handleSubmit(event){
@@ -17,18 +18,19 @@ function handleSubmit(event){
 }
 
 function askForName(){ //enter -> submit
-    form.classList.add(SHOWING_CN);
+    form.classList.add(showing);
     form.addEventListener("submit", handleSubmit);
 }
 
+//text print
 function printInfo(text){
-    form.classList.remove(SHOWING_CN);
-    info.classList.add(SHOWING_CN);
+    form.classList.remove(showing);
+    info.classList.add(showing);
     info.innerText = `Hello ${text}`;
 }
 
 function loadName(){
-    const currentUser = localStorage.getItem(USER_LS);
+    const currentUser = localStorage.getItem(user);
     if(currentUser === null){
         // no value
         askForName();
