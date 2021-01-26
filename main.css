@@ -1,26 +1,20 @@
 body{
     background-color: white;
     color:white;
+    text-align: center;
+    transition: color 1s ease-in-out;
 }
 .time{
-    text-align:center;
     font-size: 60px;
 }
 .info,
 .inputToDo,
 ul{
-    text-align:center;
     font-size: 40px;
-   
     margin-left: auto;
     margin-right: auto;
 }
 
-
-h1,h4{
-    
-    transition: color 1s ease-in-out;
-}
 .top {
 	height:70px;
 	display: flex;
@@ -30,7 +24,6 @@ h1,h4{
 .form,
 .info{
     display: none;
-    text-align: center;
 }
 
 .showing {
@@ -80,16 +73,24 @@ h1,h4{
 	height:100px; 
     resize:none;
 }
-.textBox{
+
+.searchBox{
     color:white;
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: solid;
     background: transparent;
-    width:500px; 
-	height:100px; 
+    width:200px; 
+	height:15px; 
     resize:none;
+    display: flex;
+
+
+}
+.geoInfo{
+    display: flex;
+	margin-left: auto;
 }
 
 
@@ -97,6 +98,4 @@ h1,h4{
 input::placeholder{
     color: white;
     font-size: 30px;
-    text-align: center;
-    font
 }
